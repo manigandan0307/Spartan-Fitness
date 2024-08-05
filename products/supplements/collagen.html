@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/34f486f0f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="\style.css" />
+    <title>Collagen</title>
+  </head>
+  <body>
+    
+    <section id="header">
+      <a href="/index.html"><img src="/pics/mainpages/logo.png" alt="Logo" id="Logo" /></a>
+
+      <div id="navigation">
+        <ul>
+          <li><a href="/index.html">Homepage</a></li>
+          <li><a href="/information.html">Information</a></li>
+          <li><a href="/macrocalculator.html">Macro Calculator</a></li>
+          <li><a href="/shop.html" class="active">Shop</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+          <li>
+            <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="details" class="section-p1">
+      <div class="singleimage">
+        <img
+          src="/pics/products/supplements/Vitamins/collagen/collagen.png"
+          width="100%"
+          id="mainimg"
+          alt=""
+          class="pro-image"
+          id="cart-image"
+        />
+      </div>
+      <div class="singleprodetails">
+        <h6 class="product-headers">
+          <a href="/shop.html">Shop/</a>
+          <a href="/supplements.html">Supplements/</a>
+          <a href="collagen.html">Collagen Powder</a>
+        </h6>
+        <h4 id="title" class="title">Collagen Powder <span id="type"></span></h4>
+        <h2 id="pro-price" class="pro-price">$55.00</h2>
+        <h4>Select flavour</h4>
+        <select id="flavor-select">
+          <option>Unflavoured</option>
+          <option>Rasberry</option>
+          <option>Blueberry</option>
+          <option>Grape</option>
+        </select>
+        <input type="number" id="quanitity" value="1" min="1" />
+        <button class="normal" id="indiAddToCart">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span
+        >Collagen is the most abundant protein in the body and is mainly found in skin, hair, nails, and other connective tissues. As we age, our natural collagen levels start to decline, which is where our Collagen Powder Tub comes in.</span
+      >
+      </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+      <h2>Featured products</h2>
+      <p>Most supplements sold this year</p>
+      <div class="pro-container">
+        <div class="pro" onclick="window.location.href='commandstrawberry.html'">
+          <img
+            src="/pics/products/supplements/Drinks/commandstrawberry/commandstrawberry.jpg"
+            alt="energydrink command Strawberry"
+            class="pro-image"
+            id="cart-image"
+          />
+          <div class="description">
+            <span>Energy drink</span>
+            <h5>Command can - Strawberry</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price">$15.00</h4>
+          </div>
+        </div>
+        <div class="pro" onclick="window.location.href='commandcangrape.html'">
+          <img
+            src="/pics/products/supplements/Drinks/command grape/commandgrape.jpg"
+            alt="energydrink command grape"
+            class="pro-image"
+          />
+          <div class="description">
+            <span>Energy drink</span>
+            <h5>Command can - Grape</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price">$15.00</h4>
+          </div>
+        </div>
+        <div class="pro" onclick="window.location.href='protiencookie.html'">
+          <img
+            src="/pics/products/supplements/Food/baked cookie/bakedcookie.jpg"
+            alt="Baked protien cookie"
+            class="pro-image"
+          />
+          <div class="description">
+            <span>Protien Cookie</span>
+            <h5>Baked protien cookie - Chocolate</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price">$20.99</h4>
+          </div>
+        </div>
+        <div class="pro" onclick="window.location.href='creatine.html'">
+          <img
+            src="/pics/products/supplements/creatine/creatine.jpg"
+            alt="creatine"
+            class="pro-image"
+          />
+          <div class="description">
+            <span>Creatine</span>
+            <h5>Creatine monohydrate</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4 class="price">$50.00</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-p1">
+      <div class="newstext">
+        <h4>Sign up for Newsletter</h4>
+        <p>
+          Get E-mail updates about our latest products and
+          <span>special offers.</span>
+        </p>
+      </div>
+      <div class="formnewsletter">
+        <input
+          type="email"
+          placeholder="Your email address"
+          id="newsletter-email"
+          name="Email"
+        />
+        <button type="submit" onclick="newslettersub()">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-p1">
+      <img class="flogo" src="/pics/mainpages/logo.png" alt="logo" />
+      <div class="col">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 180 Ang Mo Kio Ave 8, Singapore 569830</p>
+        <p><strong>Phone:</strong> 6451 5115</p>
+        <p><strong>Hours:</strong> 7:30 am–7:30 pm,Mon-Fri</p>
+
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <a href="https://www.facebook.com/nanyangpoly/" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/nanyangpoly/?hl=en"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://twitter.com/nyptweets?lang=en" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a
+              href="https://m.youtube.com/channel/UCBczYwgCewghBmFOYm_V7sA/videos?disable_polymer=1"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="/information.html">About us</a>
+        <a href="https://www.ups.com/sg/en/Home.page" target="_blank"
+          >Delivery Partner</a
+        >
+        <a
+          href="https://www.ups.com/ng/en/services/tracking.page"
+          target="_blank"
+          >Track Your Orders</a
+        >
+        <a href="/contact.html">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>Shop</h4>
+        <a href="/shop.html">Most Sold</a>
+        <a href="/cart.html">View Cart</a>
+        <a href="/apparel.html">Apparel</a>
+        <a href="/supplements.html">Supplements</a>
+      </div>
+    </footer>
+
+
+    <script>
+      var cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+      function addItemToCart(imageSrc, title, price, quantity) {
+
+        var flavorSelect = document.getElementById('flavor-select');
+        var selectedFlavor = flavorSelect.options[flavorSelect.selectedIndex].textContent;
+        // Check if the item already exists in the cart
+        var existingItem = cartItems.find(function(item) {
+          return item.imageSrc === imageSrc && item.title === title && item.price === price;
+        });
+
+        if (existingItem) {
+          alert('This item is already in the cart.');
+          return;
+        }
+
+        // Add the item to the cart
+        var newItem = {
+          imageSrc: imageSrc,
+          title: title + ' - ' +selectedFlavor,
+          price: price,
+          quantity: quantity
+        };
+        cartItems.push(newItem);
+
+        // Update the local storage
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+
+        alert('Item added to cart!');
+      }
+
+      // Example usage when the "Add to Cart" button is clicked
+      document.getElementById('indiAddToCart').addEventListener('click', function() {
+        var imageSrc = document.getElementById('cart-image').src;
+        var title = document.getElementById('title').textContent;
+        var price = document.getElementById('pro-price').textContent;
+        var quantity = document.getElementById('quanitity').value
+
+        addItemToCart(imageSrc, title, price, quantity);
+      });
+    </script>
+    
+    <script src="/main.js"></script>
+  </body>
+</html>

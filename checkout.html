@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  width: 120px;
+  padding-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Your Cart</title>
+  </head>
+<body>
+    <section id="header">
+        <a href="index.html"><img src="pics/mainpages/logo.png" alt="Logo" id="Logo" /></a>
+      
+        <div id="navigation">
+          <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li>
+              <a href="macrocalculator.html">Macro Calculator</a>
+            </li>
+            <li class="dropdown-container">
+              <a href="shop.html">Shop</a>
+              <ul class="dropdown-menu">
+                <li><a href="supplements.html">Supplements</a></li>
+                <li><a href="apparel.html">Apparel</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+              <a href="cart.html" class="active"><i class="fa-solid fa-cart-shopping"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="checkout" class="section-p1">
+        
+     <div class="container">
+    <h2>Checkout</h2>
+    <form id="checkout-form" onsubmit="alert('Thank you for your purchase!')">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="street">Street:</label>
+        <input type="text" id="street" required>
+      </div>
+      <div class="form-group">
+        <label for="block">Block:</label>
+        <input type="text" id="block" required>
+      </div>
+      <div class="form-group">
+        <label for="unit-number">Unit Number:</label>
+        <input type="text" id="unit-number" required>
+      </div>
+      <div class="form-group">
+        <label for="postal-code">Postal Code:</label>
+        <input type="text" id="postal-code" required>
+      </div>
+      <div class="form-group">
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" required>
+          <option value="">Select Payment Method</option>
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="PayNow">PayNow</option>
+        </select>
+      </div>
+      <p>Total amount: <span id="cart-total"></span></p>
+      <button type="submit">Pay</button>
+    </form>
+  </div>
+
+      </section>
+
+  <section id="newsletter" class="section-p1">
+    <div class="newstext">
+      <h4>Sign up for Newsletter</h4>
+      <p>
+        Get E-mail updates about our latest products and
+        <span>special offers.</span>
+      </p>
+    </div>
+    <div class="formnewsletter">
+      <input type="email" placeholder="Your email address" id="newsletter-email" name="Email" />
+      <button type="submit" onclick="newslettersub()">Sign Up</button>
+    </div>
+  </section>
+
+  <footer class="section-p1">
+    <img class="flogo" src="pics/mainpages/logo.png" alt="logo" />
+    <div class="col">
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 180 Ang Mo Kio Ave 8, Singapore 569830</p>
+      <p><strong>Phone:</strong> 6451 5115</p>
+      <p><strong>Hours:</strong> 7:30 am–7:30 pm,Mon-Fri</p>
+
+      <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+          <a href="https://www.facebook.com/nanyangpoly/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/nanyangpoly/?hl=en"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/nyptweets?lang=en" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://m.youtube.com/channel/UCBczYwgCewghBmFOYm_V7sA/videos?disable_polymer=1"
+            target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="information.html">About us</a>
+      <a href="https://www.ups.com/sg/en/Home.page" target="_blank">Delivery Partner</a>
+      <a href="https://www.ups.com/ng/en/services/tracking.page" target="_blank">Track Your Orders</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="col">
+      <h4>Shop</h4>
+      <a href="shop.html">Most Sold</a>
+      <a href="cart.html">View Cart</a>
+      <a href="apparel.html">Apparel</a>
+      <a href="supplements.html">Supplements</a>
+    </div>
+  </footer>
+
+</body>
+</html>
